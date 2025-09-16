@@ -248,7 +248,7 @@ const wordIdGenerator = (function() {
     "cups", "curb", "cure", "curl", "cute", "dame", "damp", "dare", "dart", "dash",
     "deck", "deer", "demo", "dent", "dice", "dime", "dine", "disc", "dive", "dock",
     "dogs", "doll", "dome", "dove", "doze", "drag", "drip", "drum", "duck", "dude",
-    "dues", "dumb", "dump", "dune", "dusk", "ears", "echo", "eden", "eggs", "elbow",
+    "dues", "dome", "dump", "dune", "dusk", "ears", "echo", "eden", "eggs", "elbow",
     "ends", "epic", "euro", "exam", "expo", "eyes", "fade", "faint", "fake", "fame",
     "fang", "fare", "fawn", "feat", "fern", "fest", "fever", "figs", "fins", "flag",
     "flap", "flex", "flip", "foam", "foes", "fogs", "fond", "fork", "fowl", "foxy",
@@ -266,7 +266,7 @@ const wordIdGenerator = (function() {
     const first = firstWords[Math.floor(Math.random() * firstWords.length)];
     const middle = middleWords[Math.floor(Math.random() * middleWords.length)];
     const last = lastWords[Math.floor(Math.random() * lastWords.length)];
-    return `${first}-${middle}-${last}`;
+    return `${first}_${middle}_${last}`;
   }
 
   return generateId;

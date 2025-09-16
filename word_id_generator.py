@@ -249,7 +249,7 @@ last_words = [
     "cups", "curb", "cure", "curl", "cute", "dame", "damp", "dare", "dart", "dash",
     "deck", "deer", "demo", "dent", "dice", "dime", "dine", "disc", "dive", "dock",
     "dogs", "doll", "dome", "dove", "doze", "drag", "drip", "drum", "duck", "dude",
-    "dues", "dumb", "dump", "dune", "dusk", "ears", "echo", "eden", "eggs", "elbow",
+    "dues", "dome", "dump", "dune", "dusk", "ears", "echo", "eden", "eggs", "elbow",
     "ends", "epic", "euro", "exam", "expo", "eyes", "fade", "faint", "fake", "fame",
     "fang", "fare", "fawn", "feat", "fern", "fest", "fever", "figs", "fins", "flag",
     "flap", "flex", "flip", "foam", "foes", "fogs", "fond", "fork", "fowl", "foxy",
@@ -267,4 +267,4 @@ def generate_id():
     first = random.choice(first_words)
     middle = random.choice(middle_words)
     last = random.choice(last_words)
-    return f"{first}-{middle}-{last}"
+    return f"{first}_{middle}_{last}"
